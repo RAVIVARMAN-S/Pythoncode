@@ -6,12 +6,12 @@ int main(){
    cin>>num1>>num2;
    while(num1!=0 && num2!=0) // checks value of num1 and num2 are 0 until the condition false
    {
-    num1=num1%10; //store the remainder of num1
-    num2=num2%10; //store the remainder of num2
-  
+    if(num1>=num2){num1=num1%num2;}
+    else{num2=num2%num1;}
 
    }
-   if(num1==0){cout<<num2;} //if num1 is '0' means print value of num2
+   if(num1==0){cout<<num2;}//if num1 is '0' means print value of num2
    else{cout<<num1;} //if num2 is '0' means print value of num1
+   
    
 }
