@@ -34,13 +34,13 @@ int main(){
 		cin >> temp;
 		a.push_back(temp);
 	}
-
+	
 	for(int i=0;i<n;i++){
 		int temp;
 		cin >> temp;
 		b.push_back(temp);
 	}
-
+	
 	vector<int> ans = interSection2Sortedarrays(a, b);
 	for(auto k: ans){
 		cout<< k <<" ";
